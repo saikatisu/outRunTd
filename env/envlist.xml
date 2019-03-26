@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<doc>
+  <log>
+    <dir>.\log\</dir>
+  </log>
+  <proxy>
+    <flg>1</flg>
+    <!-- 1:proxy経由する、0:proxy経由しない -->
+    <certification></certification>
+  </proxy>
+  <Treasure>
+    <authorization></authorization>
+  </Treasure>
+  <api>
+    <retry>3</retry>
+    <!-- リトライ回数 -->
+    <retry_term>45</retry_term>
+    <!-- リトライ間隔（秒） -->
+  </api>
+  <sqlList>
+    <sql>
+      <file>/sql/sql.txt</file>
+      <database></database>
+      <type>presto</type>
+      <format>tsv</format>
+      <outFile>/output/Result_sql.tsv</outFile>
+    </sql>
+  </sqlList>
+</doc>
